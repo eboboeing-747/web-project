@@ -1,3 +1,4 @@
+/* main style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,16 +6,7 @@ body {
     background-color: #282828;
     color: white;
 }
-
-/*
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-}
-*/
+/* end main style */
 
 /* header elements */
 header {
@@ -56,6 +48,12 @@ header {
     justify-content: center;
     list-style: none;
 }
+
+nav {
+    display: flex;
+    padding: 0.2rem 0;
+  }
+  
 
 nav a {
     color: white;
@@ -137,22 +135,8 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 .container__button{
     border: solid black 2px;
 }
 /* end footer elements */
-
-/*
-#img1{
-    background: url("clipart2719807.png");
-    background-size: cover;
-}
-#img2{
-    background: url("corporate-icon-2.png");
-    background-size: cover;
-}
-#img3{
-    background: url("cart.png");
-    background-size: cover;
-}
-*/

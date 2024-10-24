@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+    <script defer src="./handle.js"></script>
+</head>
+<body>
+    <div class="modal" id="form-modal">
+    <div class="modal-content">
+        <button class="close-form" id="close-form">close</button>
+        <form id="contactForm">
+            <h2>Web applications development</h2>
+            <h3>Fill the form and we will contact you to clarify details</h3>
+
+            <div>
+                <label for="name">name</label>
+                <input type="text" id="name" name="name" placeholder="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="8(800)555-35-35" required>
+            </div>
+            <br>
+            <div>
+                <label for="country">country</label>
+                <select name="country" id="country">
+                    <option value="russia">Russia</option>
+                    <option value="us">US</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="date">date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <br>
+            <div>
+                <label for="comment">comment</label>
+                <textarea></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent for my personal data processing</label>
+            </div>
+            <br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
