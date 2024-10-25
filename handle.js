@@ -1,8 +1,20 @@
-document.getElementById("open-form").addEventListener("click", function()
+// form open scripts
+document.getElementById("open-form-business-website").addEventListener("click", function()
 {
     document.getElementById("form-modal").classList.add("open");
 })
 
+document.getElementById("open-form-corporate-website").addEventListener("click", function()
+{
+    document.getElementById("form-modal").classList.add("open");
+})
+
+document.getElementById("open-form-webshop").addEventListener("click", function()
+{
+    document.getElementById("form-modal").classList.add("open");
+})
+
+// form close scripts
 document.getElementById("close-form").addEventListener("click", function()
 {
     document.getElementById("form-modal").classList.remove("open");

@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web applications development</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <script defer src="./handle.js"></script>
 </head>
 
 <body>
+    <!-- PAGE -->
     <header>
         <div style="height: 115px;">
             <div class="box">
@@ -29,7 +31,7 @@
             <nav class="nav">
                 <ul class="nav">
                     <li><a href="./index.html">Главная</a></li>
-                    <li><a href="none bruh">Первый семестр</a></li>
+                    <li><a href="./term-1.html">Первый семестр</a></li>
                     <li><a href="none bruh">Второй семестр</a></li>
                     <li><a href="./services.html">Услуги</a></li>
                     <li><a href="none bruh">Авторизация</a></li>
@@ -51,17 +53,17 @@
                 <div class="project">
                     <img src="./images/empty_image.png" id="placeholder_image">
                     <h4>Сайт визитка</h4>
-                    <button id="open-form">заказать услугу</button>
+                    <button id="open-form-business-website">заказать услугу</button>
                 </div>
                 <div class="project">
                     <img src="./images/empty_image.png" id="placeholder_image">
                     <h4>Корпоративный сайт</h4>
-                    <button id="open-form">заказать услугу</button>
+                    <button id="open-form-corporate-website">заказать услугу</button>
                 </div>
                 <div class="project">
                     <img src="./images/empty_image.png" id="placeholder_image">
                     <h4>Интернет магазин</h4>
-                    <button id="open-form">заказать услугу</button>
+                    <button id="open-form-webshop">заказать услугу</button>
                 </div>
             </div>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
@@ -74,6 +76,61 @@
     <footer>
         <p>© CSS HTML Hater, ever</p>
     </footer>
+    <!-- END PAGE -->
+
+    <!-- FORM -->
+    <div class="modal" id="form-modal">
+    <div class="modal-content">
+        <button class="close-form" id="close-form">close</button>
+        <form id="contactForm">
+            <h2>Web applications development</h2>
+            <h3>Fill the form and we will contact you to clarify details</h3>
+
+            <div>
+                <label for="name">name</label>
+                <input type="text" id="name" name="name" placeholder="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="8(800)555-35-35" required>
+            </div>
+            <br>
+            <div>
+                <label for="country">country</label>
+                <select name="country" id="country">
+                    <option value="russia">Russia</option>
+                    <option value="us">US</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="date">date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <br>
+            <div>
+                <label for="comment">comment</label>
+                <textarea></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent for my personal data processing</label>
+            </div>
+            <br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </div>
+    </div>
+    <!-- END FORM -->
 </body>
 
 </html>
