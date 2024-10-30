@@ -12,6 +12,13 @@ body {
 header {
     background-color: #282828;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
 }
 
 .box {
@@ -30,19 +37,16 @@ header {
 }
 
 #logo {
-    float: left;
-    width: 90px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#user_info {
-    padding-left: 75%;
-    margin: 10px;
-    display: block;
+.nav_bar {
+    justify-content: center;
+    display: flex;
 }
-  
+
 nav a {
     color: white;
     text-decoration: none;
@@ -57,6 +61,8 @@ nav ul {
 
 .user-info {
     text-align: right;
+    padding: 10px;
+    float: right;
 }
 
 #box1 {
@@ -127,14 +133,3 @@ footer {
     border: solid black 2px;
 }
 /* end footer elements */
-
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#top {
-    display: flex;
-    justify-content: space-between;
-}
