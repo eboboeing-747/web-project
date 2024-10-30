@@ -46,19 +46,19 @@
             <h1>Разработка веб-приложений</h1>
             <div class="projects">
                 <div class="project">
-                    <img src="./images/empty_image.png" id="placeholder_image">
+                    <img src="./images/business-cards.png" id="placeholder_image">
                     <h4>Сайт визитка</h4>
-                    <button id="open-form-business-website">заказать услугу</button>
+                    <button class="button" id="open-form-business-website">заказать услугу</button>
                 </div>
                 <div class="project">
-                    <img src="./images/empty_image.png" id="placeholder_image">
+                    <img src="./images/briefcase.png" id="placeholder_image">
                     <h4>Корпоративный сайт</h4>
-                    <button id="open-form-corporate-website">заказать услугу</button>
+                    <button class="button" id="open-form-corporate-website">заказать услугу</button>
                 </div>
                 <div class="project">
-                    <img src="./images/empty_image.png" id="placeholder_image">
+                    <img src="./images/shopping-cart.png" id="placeholder_image">
                     <h4>Интернет магазин</h4>
-                    <button id="open-form-webshop">заказать услугу</button>
+                    <button class="button" id="open-form-webshop">заказать услугу</button>
                 </div>
             </div>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
@@ -76,7 +76,9 @@
     <!-- FORM -->
     <div class="modal" id="form-modal">
     <div class="modal-content">
-        <button class="close-form" id="close-form">close</button>
+        <button class="close-form" id="close-form">
+            <img src="./images/close.png" class="close-form-icon">
+        </button>
         <form id="contactForm">
             <h2>Web applications development</h2>
             <h3>Fill the form and we will contact you to clarify details</h3>
@@ -120,8 +122,8 @@
                 <label for="consent">I consent for my personal data processing</label>
             </div>
             <br>
-            <input type="reset">
             <input type="submit">
+            <input type="reset">
         </form>
     </div>
     </div>

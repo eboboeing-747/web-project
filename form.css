@@ -6,6 +6,42 @@ body {
     background-color: #282828;
     color: white;
 }
+
+input[type=submit] {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    flex-grow: 1;
+    font-family: "system-ui";
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+input:hover[type=submit] {
+    background-color: #3b3b3b;
+}
+
+input[type=reset] {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    flex-grow: 1;
+    font-family: "system-ui";
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+input:hover[type=reset] {
+    background-color: #3b3b3b;
+}
 /* end main style */
 
 /* main form*/
@@ -45,20 +81,28 @@ body {
 /* end main form*/
 
 /* close button */
+.close-form-icon {
+    width: 20px;
+    height: 20px;
+}
+
 .close-form {
-    border: none;
-    padding: 5px;
     position: absolute;
+    background-color: #282828;
+    border: none;
+    border-radius: 20px;
+    flex-grow: 1;
+    font-family: "system-ui";
+    height: 40px;
+    min-width: 40px;
+    cursor: pointer;
     top: 8px;
     right: 8px;
-    cursor: pointer;
-    background-color: #0c0b0b;
-    color: white;
+    padding: 10px;
 }
 
 .close-form:hover {
     background-color: #3b3b3b;
-    color: white;
 }
 
 .modal.open {

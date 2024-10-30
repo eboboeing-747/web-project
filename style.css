@@ -1,9 +1,35 @@
 /* main style */
+html {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #282828;
+    color: white;
+}
+
+.button {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    flex-grow: 1;
+    font-family: "system-ui";
+    font-size: 15px;
+    height: 36px;
+    line-height: 20px;
+    margin-left: 8px;
+    margin-right: 6px;
+    min-width: 185px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3b3b3b;
     color: white;
 }
 /* end main style */
@@ -120,6 +146,13 @@ section {
 
 .description {
     margin-top: 20px;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    display: grid;
+    justify-self: center;
 }
 /* end main elements */
 
