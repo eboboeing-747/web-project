@@ -16,18 +16,18 @@
                 <h3 id="logo">Logo</h3>
             </div>
             <div class="user-info">
-                <h3 id="user_info">Group C-like</h3>
-                <h3 id="user_info1">CSS HTML Hater</h3>
+                <h3 id="user_info">Group _____</h3>
+                <h3 id="user_info1">Name Surname Middlename</h3>
             </div>
         </div>
         <div class="nav_bar">
         <nav>
             <ul class="nav">
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./term-1.html">Первый семестр</a></li>
-                <li><a href="none bruh">Второй семестр</a></li>
-                <li><a href="./services.html">Услуги</a></li>
-                <li><a href="none bruh">Авторизация</a></li>
+                <li><a class="nav-text" href="./index.html">Главная</a></li>
+                <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
+                <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
+                <li><a class="nav-text" href="./services.html">Услуги</a></li>
+                <li><a class="nav-text" href="none bruh">Авторизация</a></li>
             </ul>
         </nav></div>
     </header>
@@ -35,17 +35,20 @@
         <aside>
             <h3>Навигация по странице</h3>
             <ul style="list-style: none;">
-                <li style="padding: 5%;">Lectures</li>
-                <li style="padding: 5%;">Practice</li>
-                <li style="padding: 5%;">Uneversity Address</li>
-                <li style="padding: 5%;">Curriculum</li>
+                <li><a class="nav-text" href="#lectures">Lectures</a></li>
+                <br>
+                <li><a class="nav-text" href="#practices">Practice</a></li>
+                <br>
+                <li><a class="nav-text" href="#map-view">Uneversity Address</a></li>
+                <br>
+                <li><a class="nav-text" href="#file-view">Curriculum</a></li>
             </ul>
         </aside>
         <section style="display: flex; flex-direction: column;">
         <div style="display: flex;">
             <span style="max-width: 80%; display: flex; flex-direction: column;">
             <h3>Term 1</h3>
-            <h4>Lectures</h4>
+            <h4 id="lectures">Lectures</h4>
             <table>
                 <tr>
                   <th>Номер</th>
@@ -92,7 +95,7 @@
                     <td><input type="checkbox"></td>
                 </tr>
             </table>
-            <h4>Practices</h4>
+            <h4 id="practice">Practices</h4>
             <table>
                 <tr>
                   <th>Номер</th>
@@ -150,13 +153,13 @@
             </table>
         </div>
         <br>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebfc6b65f07727eea790921a47cad2675718dc2bc27b3f7648778498facb12c1&amp;source=constructor" width="70%" height="1000px" frameborder="0"></iframe>
+        <iframe id="map-view" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebfc6b65f07727eea790921a47cad2675718dc2bc27b3f7648778498facb12c1&amp;source=constructor" width="70%" height="1000px" frameborder="0"></iframe>
         <br>
-        <object style=" width: 70%; height: 1000px" data="./example.pdf"></object>    
+        <object id="file-view" style=" width: 70%; height: 1000px" data="./example.pdf"></object>    
     </section>
     </main>
     <footer>
-        <p>© CSS HTML Hater, ever</p>
+        <p>© Name Surname Middlename, 2024</p>
     </footer>
 </body>
 

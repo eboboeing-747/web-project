@@ -25,6 +25,10 @@ input:hover[type=submit] {
     background-color: #3b3b3b;
 }
 
+input:active[type=submit] {
+    background-color: #808080;
+}
+
 input[type=reset] {
     background-color: #1a1a1a;
     border: none;
@@ -41,6 +45,10 @@ input[type=reset] {
 
 input:hover[type=reset] {
     background-color: #3b3b3b;
+}
+
+input:active[type=reset] {
+    background-color: #808080;
 }
 /* end main style */
 
