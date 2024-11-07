@@ -18,7 +18,7 @@ window.addEventListener('keydown', (e) =>
     }
 })
 
-document.querySelector("#mobile-nav-modal .modal-content").addEventListener("click", event =>
+document.querySelector("#mobile-nav-modal .mobile-modal-content").addEventListener("click", event =>
 {
     event._isClickWithInModal = true;
 })

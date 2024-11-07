@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="./mobile-nav.css">
-    <script defer src="../scripts/handle-form.js"></script>
-    <script defer src="../scripts/handle-mobile-nav.js"></script>
 </head>
 
 <body>
@@ -77,15 +75,26 @@
     <footer>
         <p>© Name Surname Middlename, 2024</p>
     </footer>
+    <script defer src="../scripts/handle-form.js"></script>
+    <script defer src="../scripts/handle-mobile-nav.js"></script>
     <!-- END PAGE -->
 
     <!-- MOBILE NAV -->
-    <div class="modal" id="mobile-nav-modal">
-    <div class="modal-content">
+    <div class="mobile-modal" id="mobile-nav-modal">
+    <div class="mobile-modal-content">
         <button class="close-mobile-nav" id="close-mobile-nav">
             <img src="../images/close.png" class="close-mobile-nav-icon">
         </button>
-        <div style="background-color: red;"></div>
+        <h3>Навигация по сайту</h3>
+        <nav>
+            <ul class="mobile-nav-bar">
+                <li><a class="nav-text" href="./index.html">Главная</a></li>
+                <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
+                <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
+                <li><a class="nav-text" href="./services.html">Услуги</a></li>
+                <li><a class="nav-text" href="none bruh">Авторизация</a></li>
+            </ul>
+        </nav>
     </div>
     </div>
     <!-- END MOBILE NAV -->

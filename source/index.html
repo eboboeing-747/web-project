@@ -7,7 +7,6 @@
     <title>Web applications development</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mobile-nav.css">
-    <script defer src="../scripts/handle-mobile-nav.js"></script>
 </head>
 
 <body>
@@ -27,15 +26,16 @@
             </div>
         </div>
         <div class="nav_bar">
-        <nav>
-            <ul class="nav">
-                <li><a class="nav-text" href="./index.html">Главная</a></li>
-                <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
-                <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
-                <li><a class="nav-text" href="./services.html">Услуги</a></li>
-                <li><a class="nav-text" href="none bruh">Авторизация</a></li>
-            </ul>
-        </nav></div>
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-text" href="./index.html">Главная</a></li>
+                    <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
+                    <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
+                    <li><a class="nav-text" href="./services.html">Услуги</a></li>
+                    <li><a class="nav-text" href="none bruh">Авторизация</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <aside>
@@ -105,19 +105,36 @@
     </main>
     <footer>
         <p>© Name Surname Middlename, 2024</p>
+        <script defer src="../scripts/handle-mobile-nav.js"></script>
     </footer>
     <!-- END PAGE -->
 
     <!-- MOBILE NAV -->
-    <div class="modal" id="mobile-nav-modal">
-    <div class="modal-content">
-        <button class="close-mobile-nav" id="close-mobile-nav">
-            <img src="../images/close.png" class="close-mobile-nav-icon">
-        </button>
-        <div style="background-color: red;"></div>
-    </div>
-    </div>
-    <!-- END MOBILE NAV -->
+    <div class="mobile-modal" id="mobile-nav-modal">
+        <div class="mobile-modal-content">
+            <button class="close-mobile-nav" id="close-mobile-nav">
+                <img src="../images/close.png" class="close-mobile-nav-icon">
+            </button>
+            <h3>Навигация по сайту</h3>
+            <nav>
+                <ul class="mobile-nav-bar">
+                    <li><a class="nav-text" href="./index.html">Главная</a></li>
+                    <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
+                    <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
+                    <li><a class="nav-text" href="./services.html">Услуги</a></li>
+                    <li><a class="nav-text" href="none bruh">Авторизация</a></li>
+                </ul>
+            </nav>
+            <h3>Навигация по странице</h3>
+            <nav>
+                <ul class="mobile-nav-bar">
+                    <li><a class="nav-text" href="#frontend">Фронтенд</a></li>
+                    <li><a class="nav-text" href="#backend">Бэкенд</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <!-- END MOBILE NAV -->
 </body>
 
 </html>
