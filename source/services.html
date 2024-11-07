@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web applications development</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
-    <script defer src="./handle.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./mobile-nav.css">
+    <script defer src="../scripts/handle-form.js"></script>
+    <script defer src="../scripts/handle-mobile-nav.js"></script>
 </head>
 
 <body>
     <!-- PAGE -->
     <header>
-        <div id="top">
+        <div class="top">
+            <button class="close-menu" id="open-mobile-nav">
+                <img src="../images/burger_bar.png" class="close-menu-icon">
+            </button>
             <div>
-                <img id="pfp" src="./images/empty_pfp.png" loading="lazy" alt="profile picture" />
+                <img id="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
                 <h3 id="logo">Logo</h3>
             </div>
             <div class="user-info">
@@ -47,17 +52,17 @@
             <h1>Разработка веб-приложений</h1>
             <div class="projects">
                 <div class="project">
-                    <img src="./images/business-cards.png" id="placeholder_image">
+                    <img src="../images/business-cards.png" id="placeholder_image">
                     <h4>Сайт визитка</h4>
                     <button class="button" id="open-form-business-website">заказать услугу</button>
                 </div>
                 <div class="project">
-                    <img src="./images/briefcase.png" id="placeholder_image">
+                    <img src="../images/briefcase.png" id="placeholder_image">
                     <h4>Корпоративный сайт</h4>
                     <button class="button" id="open-form-corporate-website">заказать услугу</button>
                 </div>
                 <div class="project">
-                    <img src="./images/shopping-cart.png" id="placeholder_image">
+                    <img src="../images/shopping-cart.png" id="placeholder_image">
                     <h4>Интернет магазин</h4>
                     <button class="button" id="open-form-webshop">заказать услугу</button>
                 </div>
@@ -74,11 +79,22 @@
     </footer>
     <!-- END PAGE -->
 
+    <!-- MOBILE NAV -->
+    <div class="modal" id="mobile-nav-modal">
+    <div class="modal-content">
+        <button class="close-mobile-nav" id="close-mobile-nav">
+            <img src="../images/close.png" class="close-mobile-nav-icon">
+        </button>
+        <div style="background-color: red;"></div>
+    </div>
+    </div>
+    <!-- END MOBILE NAV -->
+
     <!-- FORM -->
     <div class="modal" id="form-modal">
     <div class="modal-content">
         <button class="close-form" id="close-form">
-            <img src="./images/close.png" class="close-form-icon">
+            <img src="../images/close.png" class="close-form-icon">
         </button>
         <form id="contactForm">
             <h2>Web applications development</h2>

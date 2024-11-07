@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web applications development</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-nav.css">
+    <script defer src="..//scripts/handle-mobile-nav.js"></script>
 </head>
 
 <body>
+    <!-- PAGE -->
     <header>
-        <div id="top">
+        <div class="top">
+            <button class="close-menu" id="open-mobile-nav">
+                <img src="../images/burger_bar.png" class="close-menu-icon">
+            </button>
             <div>
-                <img id="pfp" src="./images/empty_pfp.png" loading="lazy" alt="profile picture" />
+                <img id="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
                 <h3 id="logo">Logo</h3>
             </div>
             <div class="user-info">
@@ -45,7 +51,7 @@
             </ul>
         </aside>
         <section style="display: flex; flex-direction: column;">
-        <div style="display: flex;">
+        <div class="main-content">
             <span style="max-width: 80%; display: flex; flex-direction: column;">
             <h3>Term 1</h3>
             <h4 id="lectures">Lectures</h4>
@@ -72,7 +78,7 @@
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Адаптивния верстка: FlexBox b Grid Layout</td>
+                    <td>Адаптивния верстка: FlexBox &amp; Grid Layout</td>
                     <td><input type="checkbox"></td>
                 </tr>
                 <tr>
@@ -123,7 +129,7 @@
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Адаптивния верстка: FlexBox b Grid Layout</td>
+                    <td>Адаптивния верстка: FlexBox &amp; Grid Layout</td>
                     <td><input type="checkbox"></td>
                     <td><input type="checkbox"></td>
                 </tr>
@@ -153,14 +159,26 @@
             </table>
         </div>
         <br>
-        <iframe id="map-view" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebfc6b65f07727eea790921a47cad2675718dc2bc27b3f7648778498facb12c1&amp;source=constructor" width="70%" height="1000px" frameborder="0"></iframe>
+        <iframe id="map-view" class="map-size" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aebfc6b65f07727eea790921a47cad2675718dc2bc27b3f7648778498facb12c1&amp;source=constructor" frameborder="0"></iframe>
         <br>
-        <object id="file-view" style=" width: 70%; height: 1000px" data="./example.pdf"></object>    
+        <object id="file-view" style=" width: 70%; height: 1000px" data="../example.pdf"></object>    
     </section>
     </main>
     <footer>
         <p>© Name Surname Middlename, 2024</p>
     </footer>
+    <!-- END PAGE -->
+
+    <!-- MOBILE NAV -->
+    <div class="modal" id="mobile-nav-modal">
+    <div class="modal-content">
+        <button class="close-mobile-nav" id="close-mobile-nav">
+            <img src="../images/close.png" class="close-mobile-nav-icon">
+        </button>
+        <div style="background-color: red;"></div>
+    </div>
+    </div>
+    <!-- END MOBILE NAV -->
 </body>
 
 </html>

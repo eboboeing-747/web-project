@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web applications development</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile-nav.css">
+    <script defer src="../scripts/handle-mobile-nav.js"></script>
 </head>
 
 <body>
+    <!-- PAGE -->
     <header>
-        <div id="top">
+        <div class="top">
+            <button class="close-menu" id="open-mobile-nav">
+                <img src="../images/burger_bar.png" class="close-menu-icon">
+            </button>
             <div>
-                <img id="pfp" src="./images/empty_pfp.png" loading="lazy" alt="profile picture" />
+                <img id="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
                 <h3 id="logo">Logo</h3>
             </div>
             <div class="user-info">
@@ -57,7 +63,7 @@
                     </h4>
                 </span>
                 <span style="float: right">
-                    <img src="images/bro_you_need_to_train.jpg" alt="bro_you_need_to_train" width="300" height="150px"
+                    <img src="../images/bro_you_need_to_train.jpg" alt="bro_you_need_to_train" width="300" height="150px"
                         loading="lazy">
                 </span>
             </div>
@@ -100,6 +106,18 @@
     <footer>
         <p>© Name Surname Middlename, 2024</p>
     </footer>
+    <!-- END PAGE -->
+
+    <!-- MOBILE NAV -->
+    <div class="modal" id="mobile-nav-modal">
+    <div class="modal-content">
+        <button class="close-mobile-nav" id="close-mobile-nav">
+            <img src="../images/close.png" class="close-mobile-nav-icon">
+        </button>
+        <div style="background-color: red;"></div>
+    </div>
+    </div>
+    <!-- END MOBILE NAV -->
 </body>
 
 </html>
