@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -7,25 +7,26 @@
     <title>Web applications development</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mobile-nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- PAGE -->
     <header>
-        <div class="top">
-            <button class="close-menu" id="open-mobile-nav">
-                <img src="../images/burger_bar.png" class="close-menu-icon">
+        <div>
+            <button class="mobile-nav-menu" id="open-mobile-nav">
+                <img src="../images/burger_bar.png" class="mobile-nav-menu-icon">
             </button>
-            <div>
-                <img id="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
-                <h3 id="logo">Logo</h3>
+            <div class="pfp-area">
+                <img class="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
+                <h3 class="logo">Logo</h3>
             </div>
             <div class="user-info">
                 <h3 id="user_info">Group _____</h3>
                 <h3 id="user_info1">Name Surname Middlename</h3>
             </div>
         </div>
-        <div class="nav_bar">
+        <div class="nav-bar">
             <nav>
                 <ul class="nav">
                     <li><a class="nav-text" href="./index.html">Главная</a></li>
@@ -50,7 +51,7 @@
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <div class="main-section">
                 <span style="max-width: 80%; display: flex; flex-direction: column;">
-                    <h4 style="margin-top: 0px; margin-right: 20px;">
+                    <h4 class="picture-text">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
                     provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
@@ -111,30 +112,30 @@
 
     <!-- MOBILE NAV -->
     <div class="mobile-modal" id="mobile-nav-modal">
-        <div class="mobile-modal-content">
-            <button class="close-mobile-nav" id="close-mobile-nav">
-                <img src="../images/close.png" class="close-mobile-nav-icon">
-            </button>
-            <h3>Навигация по сайту</h3>
-            <nav>
-                <ul class="mobile-nav-bar">
-                    <li><a class="nav-text" href="./index.html">Главная</a></li>
-                    <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
-                    <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
-                    <li><a class="nav-text" href="./services.html">Услуги</a></li>
-                    <li><a class="nav-text" href="none bruh">Авторизация</a></li>
-                </ul>
-            </nav>
-            <h3>Навигация по странице</h3>
-            <nav>
-                <ul class="mobile-nav-bar">
-                    <li><a class="nav-text" href="#frontend">Фронтенд</a></li>
-                    <li><a class="nav-text" href="#backend">Бэкенд</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
-        <!-- END MOBILE NAV -->
+    <div class="mobile-modal-content">
+        <button class="close-mobile-nav" id="close-mobile-nav">
+            <img src="../images/close.png" class="close-mobile-nav-icon">
+        </button>
+        <h3>Навигация по сайту</h3>
+        <nav>
+            <ul class="mobile-nav-bar">
+                <li><a class="nav-text" href="./index.html">Главная</a></li>
+                <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
+                <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
+                <li><a class="nav-text" href="./services.html">Услуги</a></li>
+                <li><a class="nav-text" href="none bruh">Авторизация</a></li>
+            </ul>
+        </nav>
+        <h3>Навигация по странице</h3>
+        <nav>
+            <ul class="mobile-nav-bar">
+                <li><a class="nav-text" href="#frontend">Фронтенд</a></li>
+                <li><a class="nav-text" href="#backend">Бэкенд</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <!-- END MOBILE NAV -->
 </body>
 
 </html>

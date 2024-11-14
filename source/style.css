@@ -43,17 +43,13 @@ tr:hover {
 
 /* header elements */
 header {
-    background-color: #282828;
+    /* background-color: #282828; */
+    background-color: #212529;
     color: white;
     display: flex;
     position: sticky;
     top: 0;
     flex-direction: column;
-}
-
-.top {
-    display: flex;
-    justify-content: space-between;
 }
 
 .box {
@@ -63,7 +59,13 @@ header {
     position: relative;
 }
 
-#pfp {
+.pfp-area {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.pfp {
     width: 70px;
     height: 70px;
     padding: 10px;
@@ -71,15 +73,16 @@ header {
     position: static;
 }
 
-#logo {
+.logo {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.nav_bar {
+.nav-bar {
     justify-content: center;
     display: flex;
+    padding-top: 120px;
 }
 
 nav a {
@@ -112,6 +115,9 @@ nav ul {
     text-align: right;
     padding: 10px;
     float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 #box1 {
@@ -151,6 +157,11 @@ section {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.picture-text {
+    margin-top: 0px;
+    margin-right: 20px;
 }
 
 .main-content {
@@ -206,26 +217,26 @@ footer {
 /* end footer elements */
 
 /* mobile navigation menu */
-.close-menu-icon {
-    width: 60px;
-    height: 60px;
+.mobile-nav-menu-icon {
+    width: 40px;
+    height: 40px;
 }
 
-.close-menu {
+.mobile-nav-menu {
     position: absolute;
     background-color: inherit;
     border: none;
     flex-grow: 1;
     font-family: "system-ui";
-    height: 80px;
-    min-width: 80px;
+    height: 40px;
+    min-width: 40px;
     cursor: pointer;
     top: 8px;
     left: 100px;
     padding: 10px;
 }
 
-.close-menu:hover {
+.mobile-nav-menu:hover {
     background-color: #3b3b3b;
 }
 
@@ -242,11 +253,15 @@ footer {
         padding-right: 0px;
     }
 
+    header {
+        padding-bottom: 110px;
+    }
+
     main {
         padding-top: 0px;
     }
 
-    .nav_bar {
+    .nav-bar {
         display: none;
     }
 
@@ -275,6 +290,24 @@ footer {
     .projects {
         flex-direction: column;
     }
+
+    .mobile-nav-menu {
+        left: 5px;
+    }
+
+    .pfp-area {
+        left: 60px;
+    }
+
+    .pfp {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .picture-text {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1002px) { /* tablet 768 - 992 */
@@ -283,12 +316,17 @@ footer {
         padding-right: 0px;
     }
 
+    header {
+        padding-bottom: 110px;
+    }
+
     main {
         padding-top: 0px;
     }
 
-    .nav_bar {
+    .nav-bar {
         display: none;
+        padding-bottom: 100px;
     }
     
     aside {
@@ -316,10 +354,28 @@ footer {
     .projects {
         flex-direction: column;
     }
+
+    .mobile-nav-menu {
+        left: 5px;
+    }
+
+    .pfp-area {
+        left: 60px;
+    }
+
+    .pfp {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .picture-text {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (min-width: 1002px) { /* pc */
-    .close-menu {
+    .mobile-nav-menu {
         display: none;
     }
 }
