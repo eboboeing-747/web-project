@@ -1,140 +1,108 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web applications development</title>
+    <title>Web application development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobile-nav.css">
 </head>
 
 <body>
-    <!-- PAGE -->
-    <header>
-        <div class="top">
-            <button class="close-menu" id="open-mobile-nav">
-                <img src="../images/burger_bar.png" class="close-menu-icon">
-            </button>
-            <div>
-                <img id="pfp" src="../images/empty_pfp.png" loading="lazy" alt="profile picture" />
-                <h3 id="logo">Logo</h3>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <header class="fixed-top">
+        <div class="bg-dark p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 d-flex align-items-center flex-column">
+                        <img src="./../images/empty_pfp.png" class="pfp" alt="profile-picture">
+                        <h4 class="mb-0">Logo</h4>
+                    </div>
+                    <div class="col d-flex align-items-end justify-content-center flex-column">
+                        <h4>Group</h4>
+                        <h4>Name Surname Middlename</h4>
+                    </div>
+                </div>
             </div>
-            <div class="user-info">
-                <h3 id="user_info">Group _____</h3>
-                <h3 id="user_info1">Name Surname Middlename</h3>
-            </div>
-        </div>
-        <div class="nav_bar">
-            <nav>
-                <ul class="nav">
-                    <li><a class="nav-text" href="./index.html">Главная</a></li>
-                    <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
-                    <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
-                    <li><a class="nav-text" href="./services.html">Услуги</a></li>
-                    <li><a class="nav-text" href="none bruh">Авторизация</a></li>
-                </ul>
-            </nav>
+            <ul class="nav justify-content-center">
+                <li><a class="nav-link text-white" href="./index.html">Главная</a></li>
+                <li><a class="nav-link text-white" href="./term-1.html">1 семестр</a></li>
+                <li><a class="nav-link text-white" href="./none-bruh">2 семестр</a></li>
+                <li><a class="nav-link text-white" href="./services.html">Услуги</a></li>
+                <li><a class="nav-link text-white" href="./none-bruh">Авторизация</a></li>
+            </ul>
         </div>
     </header>
-    <main>
-        <aside>
-            <h3>Навигация по странице</h3>
-            <ul style="list-style: none;">
-                <li><a class="nav-text" href="#frontend">Фронтенд</a></li>
-                <br>
-                <li><a class="nav-text" href="#backend">Бэкенд</a></li>
-            </ul>
-        </aside>
-        <section style="display: flex; flex-direction: column;">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <div class="main-section">
-                <span style="max-width: 80%; display: flex; flex-direction: column;">
-                    <h4 style="margin-top: 0px; margin-right: 20px;">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
-                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-                    maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                    </h4>
-                </span>
-                <span style="float: right">
-                    <img src="../images/bro_you_need_to_train.jpg" alt="bro_you_need_to_train" width="300" height="150px"
-                        loading="lazy">
-                </span>
-            </div>
-            <div>
-                <h4 id="frontend">Frontend</h4>
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
-                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-                    maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                </p>
-                <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
+    <main class="pt-2">
+        <div style="height: 150px;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h4>Навигация<h4>
+                    <ul class="nav flex-column">
+                        <li><small><a class="nav-link text-white" href="#frontend">Фронтенд</a></small></li>
+                        <li><small><a class="nav-link text-white" href="#backend">Бэкенд</a></small></li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <div class="row">
+                        <div class="col-9">
+                            <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi ducimus labore
+                                debitis
+                                porro odit, amet esse, cupiditate quo ipsa, quam perspiciatis maiores dicta. Aspernatur
+                                totam neque nisi, officia iure ipsum ut maxime commodi enim maiores expedita odit
+                                deleniti
+                                dolores illum esse rem. Itaque velit voluptatem tempore repellendus iste facilis animi
+                                veniam. Maxime tempora explicabo quam ab maiores cumque modi.
+                            </h5>
+                        </div>
+                        <div class="col-3">
+                            <img src="./../images/bro_you_need_to_train.jpg" alt="bro-you-need-to-train">
+                        </div>
+                    </div>
+                    <br>
+                    <h4 id="frontend">Фронтенд</h4>
+                    <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugiat ipsum, aliquam maiores
+                        explicabo et quidem facere saepe! Aliquid vero laudantium, dolor corporis tenetur, dolorum
+                        consequatur quae praesentium doloribus eius harum aperiam, animi minima soluta asperiores
+                        facilis saepe quas nesciunt commodi eum! Quo expedita facilis exercitationem vitae cumque labore
+                        aliquid optio id tenetur. Laboriosam ea impedit sint at tenetur, nisi quasi consectetur vitae.
+                        Cumque, inventore doloremque. Eveniet ratione qui consectetur recusandae exercitationem repellat
+                        corporis voluptas!
+                    </h5>
+                    <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h4 id="backend">Backend</h4>
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                    fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                    est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                    voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
-                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-                    maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                </p>
-                <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
+                    <br>
+                    <h4 id="backend">Бэкенд</h4>
+                    <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita inventore dolor autem eum
+                        natus velit id nobis consectetur officia ex, error, voluptate obcaecati esse. Ea, expedita
+                        reprehenderit? Aut sint quis cumque officiis laudantium, nulla ea officia ducimus exercitationem
+                        culpa vero dolorum aspernatur possimus ipsa ad qui corporis consequatur accusantium praesentium.
+                        Doloremque nostrum vel at corporis saepe ea debitis maiores molestias aspernatur accusamus? Amet
+                        nisi animi voluptas necessitatibus recusandae corrupti vitae, facere officiis doloremque
+                        maiores.
+                    </h5>
+                    <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <p>© Name Surname Middlename, 2024</p>
-        <script defer src="../scripts/handle-mobile-nav.js"></script>
+    <footer class="p-4">
+        <p class="text-center mb-0">© Name Surname Middlename, 2024</p>
     </footer>
-    <!-- END PAGE -->
-
-    <!-- MOBILE NAV -->
-    <div class="mobile-modal" id="mobile-nav-modal">
-        <div class="mobile-modal-content">
-            <button class="close-mobile-nav" id="close-mobile-nav">
-                <img src="../images/close.png" class="close-mobile-nav-icon">
-            </button>
-            <h3>Навигация по сайту</h3>
-            <nav>
-                <ul class="mobile-nav-bar">
-                    <li><a class="nav-text" href="./index.html">Главная</a></li>
-                    <li><a class="nav-text" href="./term-1.html">Первый семестр</a></li>
-                    <li><a class="nav-text" href="none bruh">Второй семестр</a></li>
-                    <li><a class="nav-text" href="./services.html">Услуги</a></li>
-                    <li><a class="nav-text" href="none bruh">Авторизация</a></li>
-                </ul>
-            </nav>
-            <h3>Навигация по странице</h3>
-            <nav>
-                <ul class="mobile-nav-bar">
-                    <li><a class="nav-text" href="#frontend">Фронтенд</a></li>
-                    <li><a class="nav-text" href="#backend">Бэкенд</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
-        <!-- END MOBILE NAV -->
 </body>
 
 </html>
