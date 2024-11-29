@@ -1,0 +1,106 @@
+/* main style */
+input[type=submit] {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    flex-grow: 1;
+    font-family: "system-ui";
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+input:hover[type=submit] {
+    background-color: #3b3b3b;
+}
+
+input:active[type=submit] {
+    background-color: #808080;
+}
+
+input[type=reset] {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    flex-grow: 1;
+    font-family: "system-ui";
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+input:hover[type=reset] {
+    background-color: #3b3b3b;
+}
+
+input:active[type=reset] {
+    background-color: #808080;
+}
+/* end main style */
+
+/* main form*/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .4);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-content {
+    background-color: #282828;
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* end main form */
+
+/* close button */
+.close-form-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.close-form {
+    position: absolute;
+    background-color: #282828;
+    border: none;
+    border-radius: 20px;
+    flex-grow: 1;
+    font-family: "system-ui";
+    height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    padding: 10px;
+}
+
+.close-form:hover {
+    background-color: #3b3b3b;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+/* end close button */
