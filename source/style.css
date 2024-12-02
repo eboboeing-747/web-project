@@ -1,4 +1,4 @@
-/* HEADER */
+/* PAGE */
 .pfp {
     width: 70px;
     height: 70px;
@@ -23,3 +23,23 @@
     width: 200px;
     height: 200px;
 }
+/* END PAGE */
+
+/* BUTTONS */
+.foo-button {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.color {
+    color: #ff0a0a;
+}
+
+.hide {
+    display: none;
+}
+/* END BUTTONS */

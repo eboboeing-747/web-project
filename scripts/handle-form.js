@@ -41,3 +41,44 @@ document.getElementById("form-modal").addEventListener("click", event =>
     }
     event.currentTarget.classList.remove("open")
 })
+
+// form submission
+class formData
+{
+    constructor(name, email, phoneNumber, country, date, comment)
+    {
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.country = country;
+        this.date = date;
+        this.comment = comment;
+    }
+
+    log()
+    {
+        console.log('name: ${this.name}');
+        console.log('email: ${this.email}');
+        console.log('phone number: ${this.phoneNumber}');
+        console.log('country: ${this.country}');
+        console.log('date: ${this.date}');
+        console.log('comment: ${this.comment}');
+    }
+
+    static validatePhoneNumber(phoneNumber)
+    {
+
+    }
+
+    static submit()
+    {
+
+    }
+}
+
+form = document.querySelector('form');
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+    console.log('form submitted');
+})

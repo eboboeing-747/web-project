@@ -13,8 +13,10 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <header class="fixed-top">
+        <button class="foo-button" style="top: 10px;" id="hide-video">hide video</button>
         <div class="bg-dark p-2">
             <div class="container">
                 <div class="row">
@@ -77,7 +79,7 @@
                         Cumque, inventore doloremque. Eveniet ratione qui consectetur recusandae exercitationem repellat
                         corporis voluptas!
                     </h5>
-                    <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
+                    <iframe class="video" id="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -92,7 +94,7 @@
                         nisi animi voluptas necessitatibus recusandae corrupti vitae, facere officiis doloremque
                         maiores.
                     </h5>
-                    <iframe class="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
+                    <iframe class="video" id="video" src="https://www.youtube.com/embed/AtcJ1If7aUs?si=-kBm5iav0OSYlhg_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -103,6 +105,7 @@
     <footer class="p-4">
         <p class="text-center mb-0">© Name Surname Middlename, 2024</p>
     </footer>
+    <script src="../scripts/hide-video.js"></script>
 </body>
 
 </html>
