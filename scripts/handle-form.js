@@ -43,7 +43,7 @@ document.getElementById("form-modal").addEventListener("click", event =>
 })
 
 // form submission
-class formData
+class FormData
 {
     constructor(name, email, phoneNumber, country, date, comment)
     {
@@ -57,28 +57,67 @@ class formData
 
     log()
     {
-        console.log('name: ${this.name}');
-        console.log('email: ${this.email}');
-        console.log('phone number: ${this.phoneNumber}');
-        console.log('country: ${this.country}');
-        console.log('date: ${this.date}');
-        console.log('comment: ${this.comment}');
+        console.log('name: ' + this.name);
+        console.log('email: ' + this.email);
+        console.log('phone number: ' + this.phoneNumber);
+        console.log('country: ' + this.country);
+        console.log('date: ' + this.date);
+        console.log('comment: ' + this.comment);
     }
 
     static validatePhoneNumber(phoneNumber)
     {
+        const phonePattern = /(\+)?[0-9]?[ _-]?\(?([0-9]{3})\)?[ _-]?([0-9]{3})[ _-]?([0-9]{2})[ _-]?([0-9]{2})/i;
+        return phonePattern.test(phoneNumber);
+    }
 
+    static validateEmail(email)
+    {
+        const emailPattern = /[a-z0-9._%+-]+@([a-z0-9]+\.)+[a-z]+/i
+        return emailPattern.test(email);
     }
 
     static submit()
     {
-
+        
     }
 }
 
-form = document.querySelector('form');
+form = document.querySelector('#contactForm');
 
-form.addEventListener("submit", async function(event) {
+form.addEventListener("submit", function(event)
+{
     event.preventDefault();
-    console.log('form submitted');
+    var name = form.elements['name'].value;
+    var email = form.elements['email'].value;
+    var phoneNumber = form.elements['phone'].value;
+    var country = form.elements['country'].value;
+    var date = form.elements['date'].value;
+    var comment = form.elements['comment'].value;
+
+    var isValid = true;
+    var report = '';
+
+    if (!FormData.validatePhoneNumber(phoneNumber))
+    {
+        isValid = false;
+        report += 'failed to interpret ' + phoneNumber + ' as a phone number\n';
+        console.log('phone invalid');
+    }
+
+    if (!FormData.validateEmail(email))
+    {
+        isValid = false;
+        report += 'failed to interpret ' + email + ' as email';
+        console.log('email invalid');
+    }
+
+    if (!isValid)
+    {
+        alert(report);
+        return;
+    }
+
+    const formData = new FormData(name, email, phoneNumber, country, date, comment);
+    formData.log();
 })

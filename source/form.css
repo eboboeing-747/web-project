@@ -78,6 +78,7 @@ input:active[type=reset] {
 .close-form-icon {
     width: 20px;
     height: 20px;
+    border: none;
 }
 
 .close-form {
@@ -86,13 +87,11 @@ input:active[type=reset] {
     border: none;
     border-radius: 20px;
     flex-grow: 1;
-    font-family: "system-ui";
     height: 40px;
-    min-width: 40px;
+    width: 40px;
     cursor: pointer;
     top: 8px;
     right: 8px;
-    padding: 10px;
 }
 
 .close-form:hover {
