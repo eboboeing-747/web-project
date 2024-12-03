@@ -101,14 +101,14 @@ form.addEventListener("submit", function(event)
     if (!FormData.validatePhoneNumber(phoneNumber))
     {
         isValid = false;
-        report += 'failed to interpret ' + phoneNumber + ' as a phone number\n';
+        report += 'failed to interpret \'' + phoneNumber + '\' as a phone number\n';
         console.log('phone invalid');
     }
 
     if (!FormData.validateEmail(email))
     {
         isValid = false;
-        report += 'failed to interpret ' + email + ' as email';
+        report += 'failed to interpret \'' + email + '\' as email';
         console.log('email invalid');
     }
 
