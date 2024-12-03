@@ -1,5 +1,5 @@
 /* main style */
-input[type=submit] {
+/*input[type=submit] {
     background-color: #1a1a1a;
     border: none;
     border-radius: 6px;
@@ -41,7 +41,7 @@ input:hover[type=reset] {
 
 input:active[type=reset] {
     background-color: #808080;
-}
+}*/
 /* end main style */
 
 /* main form*/
