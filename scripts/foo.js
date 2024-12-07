@@ -3,6 +3,28 @@
 // 3. find <p> and replace its text with 'this is new paragraph text'
 // 4. make video.display = none
 
+function getUTMData()
+{
+    var data = {};
+    const url = window.location.href;
+    const lowerBorder = url.indexOf('?');
+
+    if (lowerBorder == -1)
+    {
+        return data;
+    }
+
+    const utm = url.substring(lowerBorder + 1, url.length).split('&');
+
+    utm.forEach((element) => 
+    {
+        var temp = element.split('=');
+        data[temp[0]] = temp[1];
+    })
+    
+    return data;
+}
+
 var stage_h = 0;
 headerToModify = document.querySelector('h4');
 const text_h = headerToModify.textContent;
