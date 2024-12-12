@@ -5,21 +5,15 @@
 
 function getUTMData()
 {
-    var data = {};
     const url = window.location.href;
     const lowerBorder = url.indexOf('?');
-
-    if (lowerBorder == -1)
-    {
-        return data;
-    }
-
     const utm = url.substring(lowerBorder + 1, url.length).split('&');
+    var data = [];
 
     utm.forEach((element) => 
     {
         var temp = element.split('=');
-        data[temp[0]] = temp[1];
+        data.push(temp);
     })
     
     return data;

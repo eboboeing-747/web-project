@@ -2,6 +2,12 @@
 .pfp {
     width: 70px;
     height: 70px;
+    margin: 5px;
+}
+
+.pfp-placeholder {
+    display: block;
+    height: 5px;
 }
 
 .video {
@@ -22,6 +28,13 @@
     margin-right: 50px;
     width: 200px;
     height: 200px;
+}
+
+.text {
+    color: var(--bs-heading-color);
+    line-height: 1.2;
+    font-weight: 500;
+    text-decoration: none;
 }
 /* END PAGE */
 
