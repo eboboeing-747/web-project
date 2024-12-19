@@ -1,6 +1,10 @@
 var pfp = document.getElementById("pfp")
 var isStudent = true;
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function addSize(image, addWidth, addHeight)
 {
     image.style.width = (image.width + addWidth).toString() + "px";
@@ -12,16 +16,21 @@ function addSize(image, addWidth, addHeight)
     alert("double click");
 })*/
 
-pfp.addEventListener("mouseover", event =>
+async function pause()
 {
-    addSize(pfp, 10, 10);
-    pfp.style.margin = "0px";
-})
+    await sleep(900);
+    pfp.style.animationPlayState = "paused";
+}
 
-pfp.addEventListener("mouseout", event =>
+async function play()
 {
-    addSize(pfp, -10, -10);
-    pfp.style.margin = "5px";
+    pfp.style.animationPlayState = "initial";
+    setTimeout(pause, 0);
+}
+
+pfp.addEventListener("mouseenter", event =>
+{
+    play();
 })
 
 pfp.addEventListener("click", event =>

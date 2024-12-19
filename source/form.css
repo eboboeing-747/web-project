@@ -25,6 +25,32 @@
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
+    border-width: 0px;
+
+    animation-name: success;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+
+@keyframes success {
+    25% {
+        border-width: 1px;
+        border-color: green;
+        border-style: groove;
+    }
+
+    50% {
+        border-width: 2px;
+        border-color: greenyellow;
+        border-style: groove;
+    }
+
+    75% {
+        border-width: 1px;
+        border-color: green;
+        border-style: groove;
+    }
 }
 /* end main form */
 

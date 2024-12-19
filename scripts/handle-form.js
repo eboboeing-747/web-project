@@ -1,3 +1,9 @@
+// animation play
+function play(element)
+{
+    element.style.animationPlayState = "running";
+}
+
 // form open scripts
 document.getElementById("open-form-business-website").addEventListener("click", function()
 {
@@ -87,6 +93,7 @@ form = document.querySelector('#contactForm');
 
 form.addEventListener("submit", function(event)
 {
+    console.log("[submit] call");
     event.preventDefault();
     var name = form.elements['name'].value;
     var email = form.elements['email'].value;
@@ -120,4 +127,6 @@ form.addEventListener("submit", function(event)
 
     const formData = new FormData(name, email, phoneNumber, country, date, comment);
     formData.log();
+    element = document.getElementById("modal-content")
+    play(element);
 })
