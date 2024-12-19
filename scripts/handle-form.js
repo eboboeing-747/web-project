@@ -1,5 +1,5 @@
 // animation play
-function play(element)
+function playSubmission(element)
 {
     element.style.animationPlayState = "running";
 }
@@ -128,5 +128,5 @@ form.addEventListener("submit", function(event)
     const formData = new FormData(name, email, phoneNumber, country, date, comment);
     formData.log();
     element = document.getElementById("modal-content")
-    play(element);
+    playSubmission(element);
 })

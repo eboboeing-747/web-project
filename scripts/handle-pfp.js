@@ -22,7 +22,7 @@ async function pause()
     pfp.style.animationPlayState = "paused";
 }
 
-async function play()
+async function playPFP()
 {
     pfp.style.animationPlayState = "initial";
     setTimeout(pause, 0);
@@ -30,19 +30,19 @@ async function play()
 
 pfp.addEventListener("mouseenter", event =>
 {
-    play();
+    playPFP();
 })
 
 pfp.addEventListener("click", event =>
 {
     if (isStudent)
     {
-        pfp.src = "../images/Onizuka.png";
+        pfp.src = "./images/Onizuka.png";
         isStudent = false;
     }
     else
     {
-        pfp.src = "../images/empty_pfp.png";
+        pfp.src = "./images/empty_pfp.png";
         isStudent = true;
     }
 })

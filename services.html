@@ -7,9 +7,10 @@
     <title>Web application development</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./form.css">
-    <script defer src="../scripts/handle-form.js"></script>
+    <link rel="stylesheet" href="./source/style.css">
+    <link rel="stylesheet" href="./source/form.css">
+    <script defer src="./scripts/handle-form.js"></script>
+    <script defer src="./scripts/handle-pfp.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-1 d-flex align-items-center flex-column">
-                        <img src="./../images/empty_pfp.png" class="pfp" alt="profile-picture">
+                        <img src="./images/empty_pfp.png" id="pfp" class="pfp" alt="profile-picture">
                         <h4 class="mb-0">Logo</h4>
                     </div>
                     <div class="col d-flex align-items-end justify-content-center flex-column">
@@ -55,19 +56,19 @@
                     <div class="container d-flex justify-content-center">
                         <div class="row">
                             <div class="col d-flex flex-column align-items-center">
-                                <img src="../images/business-cards.png" class="placeholder_image">
+                                <img src="./images/business-cards.png" class="placeholder_image">
                                 <h4>Сайт визитка</h4>
                                 <button class="btn btn-secondary" id="open-form-business-website">заказать
                                     услугу</button>
                             </div>
                             <div class="col d-flex flex-column align-items-center">
-                                <img src="../images/briefcase.png" class="placeholder_image">
+                                <img src="./images/briefcase.png" class="placeholder_image">
                                 <h4>Корпоративный сайт</h4>
                                 <button class="btn btn-secondary" id="open-form-corporate-website">заказать
                                     услугу</button>
                             </div>
                             <div class="col d-flex flex-column align-items-center">
-                                <img src="../images/shopping-cart.png" class="placeholder_image">
+                                <img src="./images/shopping-cart.png" class="placeholder_image">
                                 <h4>Интернет магазин</h4>
                                 <button class="btn btn-secondary" id="open-form-webshop">заказать услугу</button>
                             </div>
@@ -168,14 +169,14 @@
         <p class="text-center mb-0">© Name Surname Middlename, 2024</p>
     </footer>
 
-    <script src="../scripts/foo.js"></script>
+    <script src="./scripts/foo.js"></script>
     <!-- END PAGE -->
 
     <!-- FORM -->
     <div class="modal" id="form-modal">
         <div id="modal-content" class="modal-content">
             <button class="close-form" id="close-form">
-                <img src="../images/close.png" class="close-form-icon">
+                <img src="./images/close.png" class="close-form-icon">
             </button>
 
             <form id="contactForm">
